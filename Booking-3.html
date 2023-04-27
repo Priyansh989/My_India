@@ -1,16 +1,13 @@
-<?php
+<!-- <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
 	exit;
-	
 }
 //	$_SESSION['cutomer_id'];
-
 ?>
-
 
 <?php
 $var_value1 = $_GET['varname'];
@@ -163,17 +160,13 @@ $ticket_hiddennationality = $_POST['hiddennationality'];
 $ticket_hiddendparking = $_POST['hiddendparking'];
 $ticket_hiddenage = $_POST['hiddenage'];
 $String_1 = "https://tic.000webhostapp.com/test.php?1=$tckt_id&2=$ticket_m_name&3=$hiddendateofvisit&4=$ticket_hiddenname&5=$ticket_hiddenage&6=$ticket_hiddengender&7=$ticket_phoneno&8=$ticket_hiddennationality&9=$ticket_hiddendparking&10=$file";
-
 //if (header('Refresh: 2; URL='.$String_1)) {
- 
 //}
 // header( "refresh:5;url="/$String_1 ); 
 // echo 'You\'ll be redirected in about 5 secs. ';
 // echo 'If not, click <a href="wherever.php">here</a>.';
 // echo "p5";
-
-
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -204,7 +197,7 @@ $String_1 = "https://tic.000webhostapp.com/test.php?1=$tckt_id&2=$ticket_m_name&
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 <script>
-setTimeout(function (){ window.location.href="<?php echo $String_1 ?>";},5000);
+// setTimeout(function (){ window.location.href="<?php echo $String_1 ?>";},5000);
 </script>
 </head>
 
@@ -373,7 +366,9 @@ setTimeout(function (){ window.location.href="<?php echo $String_1 ?>";},5000);
         <section class="page-title centred" style="background-image: url(assets/images/background/page-title-5.jpg);">
             <div class="auto-container">
                 <div class="content-box">
-                    <h1>Book <?php echo $var_value; ?></h1>
+                    <h1>Book 
+                        <!-- <?php echo $var_value; ?> -->
+                    </h1>
                     <p>Discover your next great adventure</p>
                 </div>
             </div>
@@ -410,14 +405,19 @@ setTimeout(function (){ window.location.href="<?php echo $String_1 ?>";},5000);
                             <div class="content-box">
                                 <h3>Tour Summary</h3>
                                 <h4>Location of Visit : </h4>
-                                <h4><?php echo $_POST['m_name']; ?></h4>
+                                <h4>
+                                    <!-- <?php echo $_POST['m_name']; ?> -->
+                                </h4>
                                 <ul class="info clearfix">
-                                    <li><i class="far fa-calendar-alt"></i>Date of Visit: <span><?php echo $_POST['hiddendateofvisit']; ?></span></li>
+                                    <li><i class="far fa-calendar-alt"></i>Date of Visit: <span>
+                                        <!-- <?php echo $_POST['hiddendateofvisit']; ?> -->
+                                    </span></li>
                                     <li><i class="far fa-user-alt"></i>No. of Persons: <span>1 Adult</span></li>
                                 </ul>
                                 <div class="price">
-                                    <h4>Total: <?php echo $total
-                                                ?></h4>
+                                    <h4>Total: 
+                                        <!-- <?php echo $total?> -->
+                                            </h4>
                                 </div>
                             </div>
                         </div>
@@ -538,6 +538,5 @@ setTimeout(function (){ window.location.href="<?php echo $String_1 ?>";},5000);
 
 
 </body><!-- End of .page_wrapper -->
-
 
 </html>

@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $var_value1 = $_GET['varname'];
 ?>
 <?php
@@ -66,7 +66,7 @@ if ($parking_value == 'None') {
 session_start();
 // Change this to your connection info.
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -263,7 +263,9 @@ session_start();
         <section class="page-title centred" style="background-image: url(assets/images/background/page-title-5.jpg);">
             <div class="auto-container">
                 <div class="content-box">
-                    <h1>Book <?php echo $var_value; ?></h1>
+                    <h1>Book 
+                        <!-- <?php echo $var_value; ?> -->
+                    </h1>
                     <p>Discover your next great adventure</p>
                 </div>
             </div>
@@ -283,7 +285,7 @@ session_start();
                             </ul>
                             <div class="inner-box">
                                 <h3>Billing Details</h3>
-                                <form action="Booking-3.php" method="post" class="processing-form">
+                                <form action="Booking-3.html" method="post" class="processing-form">
                                     <div class="row clearfix">
 
                                         <input type="hidden" name="hiddenname" required="" value="<?php echo $_POST['name']; ?>" readonly>
@@ -504,7 +506,5 @@ session_start();
     <script src="assets/js/script.js"></script>
 
 </body><!-- End of .page_wrapper -->
-
-<!-- Mirrored from azim.commonsupport.com/Travio/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Oct 2022 10:12:42 GMT -->
 
 </html>
