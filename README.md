@@ -1,4 +1,4 @@
-# Monumatic-Web
+# My Heritage India-Web
 My Heritage India - A QR Based Ticketing Solution for the heritage sites.
 
 My Heritage India is a Qr Based Ticketing Solutions for monuments.There is no integrated booking platform for Heritage Sites that provides all basic information about the monument and its main attractions. Furthermore, there is no provision that informs us about the Ticket and Parking Booking facilities and their pricing due to which most people avoid visiting a heritage site.
